@@ -1,0 +1,44 @@
+header {
+  background-color: burlywood;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  text-align: center;
+  font-size: 18pt;
+
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+main {
+  text-align: center;
+}
+
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+#joke-box {
+  display: none;
+  text-align: center;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Want to hear a joke?</h1>
+    </header>
+
+    <main>
+        <form action="http://localhost:3000/jokebook/joke" method="get" id="get-by-category-form">
+            <label>Joke Type</label>
+            <input type="text" name="type">
+            <label>Maximum amount</label>
+            <input type="number" name="quantity">
+            <input type="submit" value="Get jokes">
+
+
+
+
+
+        </form>
+
+
+        <br>
+        <div id="flex-container">
+            <button id="category-btn">View joke categories?</button>
+
+            <button id="random-button">Get A Joke!</button>
+        </div>
+        <br>
+
+        <form action="http://localhost:3000/jokebook/joke/add" method="post" id="adder-form">
+            <label>Joke Type</label>
+            <input type="text" name="joke_type">
+            <br>
+            <br>
+            <label>Setup</label>
+            <input type="text" name="setup">
+            <br>
+            <br>
+            <label>Punchline</label>
+            <input type="text" name="delivery">
+            <br>
+            <br>
+            <input type="submit" value="Add a joke">
+
+
+
+
+
+        </form>
+
+        <div id="joke-box">
+            <h2 id="joke-header">The joke!</h2>
+            <p id="joke"></p>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+</body>
+
+</html>

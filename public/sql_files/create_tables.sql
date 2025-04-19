@@ -1,0 +1,12 @@
+
+  CREATE TABLE Categories(
+  type VARCHAR(40) PRIMARY KEY
+  );
+  
+  CREATE TABLE Jokes (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  setup VARCHAR(150) NOT NULL,
+  delivery VARCHAR(150) NOT NULL,
+  joke_type INTEGER NOT NULL,
+  FOREIGN KEY(joke_type) REFERENCES Categories(type)
+  );
